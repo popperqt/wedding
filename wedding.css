@@ -1,0 +1,9 @@
+* {
+	display: block;
+}
+
+body {
+	background-image: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png");
+	width: 100vw;
+	height: 100vh;
+}
