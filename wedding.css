@@ -1,9 +1,69 @@
 * {
 	display: block;
 }
-
+/* === Default Body Style === */
 body {
+	background-color: hsla(100,0%,0%,.6);
 	background-image: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png");
 	width: 100vw;
 	height: 100vh;
+	color: #444349;
+	position: relative;
 }
+
+/* === Header Styles === */
+header {
+	background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg") no-repeat center;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	color: #d2ba87;
+	font-family: 'Great Vibes', sans-serif;
+}
+
+.header {
+	width: 90vw;
+	padding-left: 2rem;
+}
+
+.header title{
+	font-weight: 1200;
+	font-size: 4rem;
+	padding-top: 2rem;
+}
+
+.header h2{
+	font-weight: 800;
+	font-size: 2rem;
+	text-align: right;
+	padding-right: 5rem;
+}
+
+/* Content Styles */
+
+
+
+/* Display Size */
+
+@media screen and (min-width: 1025px){
+	.header {
+		position: relative;
+		top: 5rem;
+		left: 3rem;
+		width: 50vw;
+	}
+
+	.header title{
+		font-weight: 1200;
+		font-size: 6rem;
+	}
+
+	.header h2{
+		font-weight: 800;
+		font-size: 3rem;
+		text-align: right;
+		padding-right: 17.5rem;
+	}
+}
+
+
