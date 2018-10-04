@@ -9,6 +9,8 @@ body {
 	height: 100vh;
 	color: #444349;
 	position: relative;
+	overflow-y: scroll;
+    overflow-x: scroll;
 }
 
 /* === Header Styles === */
@@ -23,34 +25,54 @@ header {
 
 .header {
 	width: 90vw;
-	padding-left: 2rem;
+	position: absolute;
+	top: 55vh;
 }
 
 .header title{
 	font-weight: 1200;
 	font-size: 4rem;
 	padding-top: 2rem;
+	padding-left: 1rem;
 }
 
 .header h2{
 	font-weight: 800;
 	font-size: 2rem;
 	text-align: right;
-	padding-right: 5rem;
+	padding-right: 2rem;
 }
 
 /* Content Styles */
+.chapter {
+	font-weight: 1200;
+	font-size: 3.5rem;
+	font-family: 'Libre Baskerville', sans-serif;
+	text-align: center;
+	padding-top: 2rem;
+}
 
+.chapterimg {
+	width: 15%;
+	height: auto;
+	margin: auto;
+	padding-top: 0.125rem;
+	padding-bottom: 1rem;
+}
+
+.locations p {
+	
+}
 
 
 /* Display Size */
 
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 768px){
 	.header {
 		position: relative;
-		top: 5rem;
-		left: 3rem;
-		width: 50vw;
+		top: 1rem;
+		left: 1.5rem;
+		width: 95vw;
 	}
 
 	.header title{
@@ -63,6 +85,81 @@ header {
 		font-size: 3rem;
 		text-align: right;
 		padding-right: 17.5rem;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.header {
+		position: relative;
+		top: 5rem;
+		left: 3rem;
+		width: 75vw;
+	}
+
+	.header title{
+		font-weight: 1200;
+		font-size: 6rem;
+	}
+
+	.header h2{
+		font-weight: 800;
+		font-size: 3rem;
+		text-align: right;
+		padding-right: 10rem;
+	}
+}
+
+@media screen and (min-width: 1025px){
+	body {
+		overflow-y: scroll;
+    	overflow-x: hidden;
+	}
+
+	.header {
+		position: relative;
+		top: 5rem;
+		left: 3rem;
+		width: 75vw;
+	}
+
+	.header title{
+		font-weight: 1200;
+		font-size: 6rem;
+	}
+
+	.header h2{
+		font-weight: 800;
+		font-size: 3rem;
+		text-align: right;
+		padding-right: 47.5rem;
+	}
+
+	.chapterimg {
+	width: 5%;
+	height: auto;
+	margin: auto;
+	}
+}
+
+/* === iPhone 5/SE */
+@media screen and (width: 320px){
+	.header {
+	width: 90vw;
+	position: absolute;
+	top: 50vh;
+	}
+
+.header title{
+	font-weight: 1200;
+	font-size: 4rem;
+	padding-top: 2rem;
+	}
+
+.header h2{
+	font-weight: 800;
+	font-size: 2rem;
+	text-align: right;
+	padding-right: 5rem;
 	}
 }
 
